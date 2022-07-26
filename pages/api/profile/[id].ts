@@ -1,11 +1,11 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-import { client } from "../../utils/client";
+import { client } from "../../../utils/client";
 import {
   singleUserQuery,
   userCreatedPostsQuery,
   userLikedPostsQuery,
-} from "../../utils/queries";
+} from "../../../utils/queries";
 
 export default async function handler(
   req: NextApiRequest,
